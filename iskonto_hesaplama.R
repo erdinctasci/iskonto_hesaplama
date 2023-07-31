@@ -9,8 +9,11 @@ ui <- fluidPage(
       numericInput("discount", "İskonto yapılacak tutar:", value = 10, min = 0)
     ),
     mainPanel(
-      h3("İskonto tutarı fiyatın:", textOutput("percent_discount"))
+      h3("İskonto tutarı fiyatın:", textOutput("percent_discount")),
     )
+    tags$footer(
+    tags$div(style = "text-align: center;", "by Erdinç Taşçı"),
+    style = "position: fixed; bottom: 0; font-size: 12px;"
   )
 )
 
